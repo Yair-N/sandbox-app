@@ -117,3 +117,7 @@ We require some script command to run and build application, for that we need to
 "start": "webpack serve --mode development --open --hot",
 "build": "webpack --mode production"
 </pre>
+
+
+I added the folders and structured the project at its most commonly formed this way.  
+I intend to use this template as pre-made boilerplate for some projects in the future.
