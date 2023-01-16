@@ -1,0 +1,41 @@
+{
+  "name": "react-bable-webpack",
+  "version": "1.0.0",
+  "description": "Creating a React app from scratch with babel and webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yair-N/react-bable-webpack.git"
+  },
+  "keywords": [
+    "react",
+    "bable",
+    "webpack"
+  ],
+  "author": "Yair-N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yair-N/react-bable-webpack/issues"
+  },
+  "homepage": "https://github.com/Yair-N/react-bable-webpack#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "core-js": "^3.27.1",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
