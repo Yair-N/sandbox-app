@@ -8,15 +8,15 @@ const ClearSearch = (
         setSearchTerm,
         searchTerm,
         setFocus = () => { },
-        onClear = () => { },
-        inputSearchTerm
+        handleClear = () => { },
+        inputSearchTerm,
+        handleClearSearchTerm
     }
 ) => {
 
-    const handleClearSearchTerm = () => {
-        setSearchTerm(inputSearchTerm)
+    const handleClick = () => {
+        handleClear()
         setFocus()
-        onClear()
     }
 
 
@@ -27,7 +27,7 @@ const ClearSearch = (
             >
                 <svg
 
-                    onClick={handleClearSearchTerm}
+                    onClick={handleClick}
                     focusable={"false"}
                     xmlns={"http://www.w3.org/2000/svg"}
                     viewBox={"0 0 30 20"}>

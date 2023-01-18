@@ -7,13 +7,13 @@ const Input = (
         searchTerm,
         setSearchTerm,
         onChange,
-        setHighlightedItem = () => { },
+        onKeyDown = () => { },
         autoFocus,
         onFocus = () => { },
-        onClear,
+        handleClear,
         placeholder,
         inputSearchTerm,
-        maxLength }
+    }
 
 ) => {
 
@@ -40,19 +40,19 @@ const Input = (
                 ref={inputRef}
                 type={'text'}
                 spellCheck={false}
+                autoFocus={autoFocus}
                 placeholder={placeholder}
                 value={searchTerm}
                 onChange={onChange}
                 onFocus={handleOnFocus}
-                autoFocus={autoFocus}
-            // onKeyDown={(event) => setHighlightedItem({ event })}
+                onKeyDown={(event) => onKeyDown(event)}
             />
 
             <ClearSearch
                 setSearchTerm={setSearchTerm}
                 searchTerm={searchTerm}
                 setFocus={setFocus}
-                onClear={onClear}
+                handleClear={handleClear}
                 inputSearchTerm={inputSearchTerm}
             />
         </InputWrapper>
@@ -68,7 +68,6 @@ const InputWrapper = styled.div`
 min-height: ${props => props.theme?.height};
 display: flex;
 align-items: center;
-width: 100%;
 
 > input {
     width: 100%;
